@@ -1,4 +1,5 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name" translatable="false">pbapplication</string>
     <string name="hola_mundo" translatable="false">Hola Mundo Lanscape</string>
     <string name="idioma" translatable="false">Hola Mundo</string>
@@ -12,4 +13,7 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
+=======
+    <string name="app_name">pbapplication</string>
+>>>>>>> main
 </resources>

@@ -13,6 +13,7 @@
         android:theme="@style/Theme.Pbapplication"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".ACicloVida"
             android:exported="false"
             android:label="@string/title_activity_aciclo_vida"
@@ -22,6 +23,8 @@
                 android:value="" />
         </activity>
         <activity
+=======
+>>>>>>> main
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
