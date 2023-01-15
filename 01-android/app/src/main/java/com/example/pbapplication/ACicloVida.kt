@@ -78,6 +78,7 @@ class ACicloVida : AppCompatActivity() {
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
         outState.run {
             //GUARDAR LAS VARIABLES
             //PRIMITIVAS
