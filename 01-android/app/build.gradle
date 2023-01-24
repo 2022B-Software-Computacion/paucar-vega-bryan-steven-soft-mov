@@ -49,8 +49,13 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 >>>>>>> main
+=======
+    implementation 'androidx.core:core-ktx:+'
+    implementation 'androidx.core:core-ktx:+'
+>>>>>>> Stashed changes
 =======
     implementation 'androidx.core:core-ktx:+'
     implementation 'androidx.core:core-ktx:+'

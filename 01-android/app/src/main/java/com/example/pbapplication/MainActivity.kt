@@ -2,7 +2,11 @@ package com.example.pbapplication
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+import android.app.Activity
+>>>>>>> Stashed changes
 =======
 import android.app.Activity
 >>>>>>> Stashed changes
@@ -20,10 +24,15 @@ import android.view.View
 import android.widget.Button
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 >>>>>>> main
+=======
+import androidx.activity.result.contract.ActivityResultContract
+import androidx.activity.result.contract.ActivityResultContracts
+>>>>>>> Stashed changes
 =======
 import androidx.activity.result.contract.ActivityResultContract
 import androidx.activity.result.contract.ActivityResultContracts
@@ -125,6 +134,9 @@ class MainActivity : AppCompatActivity() {
         )
         contenidoIntentExplicito.launch(intentExplicito);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
