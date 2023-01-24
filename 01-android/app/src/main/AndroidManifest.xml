@@ -13,9 +13,28 @@
         android:theme="@style/Theme.Pbapplication"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".BListView"
             android:exported="false" />
         <activity
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+            android:name=".CIntentExplicitoParametros"
+            android:exported="false" />
+        <activity
+            android:name=".BListView"
+            android:exported="false" />
+        <activity
+>>>>>>> Stashed changes
+>>>>>>> main
             android:name=".ACicloVida"
             android:exported="false"
             android:label="@string/title_activity_aciclo_vida"
@@ -25,6 +44,8 @@
                 android:value="" />
         </activity>
         <activity
+=======
+>>>>>>> main
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

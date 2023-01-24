@@ -7,6 +7,7 @@ class BBaseDatosMemoria {
         init {
             arregloBEntrenador
                 .add(
+<<<<<<< HEAD
                     BEntrenador("Adrian","a@a.com")
                 )
             arregloBEntrenador
@@ -16,6 +17,17 @@ class BBaseDatosMemoria {
             arregloBEntrenador
                 .add(
                     BEntrenador("Carolina","c@c.com")
+=======
+                    BEntrenador(1,"Adrian","a@a.com")
+                )
+            arregloBEntrenador
+                .add(
+                    BEntrenador(2,"Vicente","b@b.com")
+                )
+            arregloBEntrenador
+                .add(
+                    BEntrenador(3,"Carolina","c@c.com")
+>>>>>>> main
                 )
         }
     }
