@@ -83,5 +83,8 @@
         app:layout_constraintEnd_toEndOf="@+id/btn_ir_intent_implicito"
         app:layout_constraintStart_toStartOf="@+id/btn_ir_intent_implicito" />
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 </androidx.constraintlayout.widget.ConstraintLayout>
