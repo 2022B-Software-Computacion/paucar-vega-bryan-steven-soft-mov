@@ -1,0 +1,4 @@
+codigo tipo nombre fecha_fundacion impuestos
+001 Alimentos Megamaxi 1950-04-05 true
+002 Ferreteria Tia 1990-06-20 true
+003 Almacen Ferrisariato 2000-02-08 true

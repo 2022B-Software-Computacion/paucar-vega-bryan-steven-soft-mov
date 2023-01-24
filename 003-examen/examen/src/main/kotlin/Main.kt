@@ -8,31 +8,31 @@ import javax.swing.JOptionPane
 
 fun main(args: Array<String>) {
 
-    val pathSt = "resources/txt/estudiantes.txt"
-    val pathFa = "resources/txt/facultades.txt"
+    val pathSt = "Recursos/estudiantes.txt"
+    val pathFa = "Recursos/facultades.txt"
 
     var s = "n"
     //Menu
-    val menu = "-----Estudiantes-----\n1) Consultar estudiantes\n2) Consultar estudiantes por código\n" +
-            "3)Actualizar estudiante\n4) Borrar estudiante\n5) Insertar estudiante" +
-            "\n-----Facultades-----\n6) Consultar facultades\n7) Consultar facultades por código\n8)Actualizar facultad" +
-            "\n9) Borrar facultad\n10) Insertar facultad\n\ns) Salir"
+    val menu = "-----Empleado-----\n1) Consultar Empleado\n2) Consultar Empleado por código\n" +
+            "3)Actualizar Empleado\n4) Borrar Empleado\n5) Insertar Empleado" +
+            "\n-----Empresa-----\n6) Consultar Empresa\n7) Consultar Empresa por código\n8)Actualizar Empresa" +
+            "\n9) Borrar Empresa\n10) Insertar Empresa\n\ns) Salir"
 
     do {
         var opM = JOptionPane.showInputDialog(null, menu, "Menú", -1)
         when (opM) {
-            "1" -> JOptionPane.showMessageDialog(null, readFile(pathSt), "Estudiantes", -1)
+            "1" -> JOptionPane.showMessageDialog(null, readFile(pathSt), "Empleado", -1)
 
             "2" -> {
                 var opC = JOptionPane.showInputDialog("Ingrese código")
-                JOptionPane.showMessageDialog(null, search(opC, pathSt), "Buscar estudiante", -1)
+                JOptionPane.showMessageDialog(null, search(opC, pathSt), "Buscar Empleado", -1)
             }
 
             "3" -> {
                 var opC = JOptionPane.showInputDialog("Ingrese código")
                 var opA = JOptionPane.showInputDialog(
                     "--Atributos actualizables--\n" +
-                            "1) promedio\n2) edad\n\nIngrese el atributo a actualizar"
+                            "1) sueldo\n2) edad\n\nIngrese el atributo a actualizar"
                 )
                 var opU = JOptionPane.showInputDialog("Ingrese el valor")
 
@@ -48,26 +48,26 @@ fun main(args: Array<String>) {
                 var cod = JOptionPane.showInputDialog("Ingrese código")
                 var nombre = JOptionPane.showInputDialog("Ingrese nombre")
                 var apellido = JOptionPane.showInputDialog("Ingrese apellido")
-                var promedio = JOptionPane.showInputDialog("Ingrese promedio")
+                var sueldo = JOptionPane.showInputDialog("Ingrese sueldo")
                 var edad = JOptionPane.showInputDialog("Ingrese edad")
-                var codF = JOptionPane.showInputDialog("Ingrese código de facultad")
-                var carre = JOptionPane.showInputDialog("Ingrese carrera")
+                var nomEmpresa = JOptionPane.showInputDialog("Ingrese nombre Empresa")
+                var cargo = JOptionPane.showInputDialog("Ingrese cargo")
 
-                createStudent(cod, nombre, apellido, promedio.toDouble(), edad.toInt(), codF, carre, pathSt)
+                createStudent(cod, nombre, apellido, sueldo.toDouble(), edad.toInt(), nomEmpresa, cargo, pathSt)
             }
 
-            "6" -> JOptionPane.showMessageDialog(null, readFile(pathFa), "Facultades", -1)
+            "6" -> JOptionPane.showMessageDialog(null, readFile(pathFa), "Empresa", -1)
 
             "7" -> {
                 var opC = JOptionPane.showInputDialog("Ingrese código")
-                JOptionPane.showMessageDialog(null, search(opC, pathFa), "Buscar facultad", -1)
+                JOptionPane.showMessageDialog(null, search(opC, pathFa), "Buscar Empresa", -1)
             }
 
             "8" -> {
                 var opC = JOptionPane.showInputDialog("Ingrese código")
                 var opA = JOptionPane.showInputDialog(
                     "--Atributos actualizables--\n" +
-                            "1) Biblioteca disponible\n\nIngrese el atributo a actualizar"
+                            "1) pagaImpuestos\n\nIngrese el atributo a actualizar"
                 )
                 var opU = JOptionPane.showInputDialog("Ingrese el valor")
 
@@ -81,12 +81,12 @@ fun main(args: Array<String>) {
 
             "10" -> {
                 var cod = JOptionPane.showInputDialog("Ingrese código")
-                var carre = JOptionPane.showInputDialog("Ingrese carrera")
+                var tipo = JOptionPane.showInputDialog("Ingrese tipo")
                 var nombre = JOptionPane.showInputDialog("Ingrese nombre")
                 var date = JOptionPane.showInputDialog("Ingrese fecha de fundación")
-                var bib = JOptionPane.showInputDialog("Biblioteca disponible (true, false)?")
+                var impuestos = JOptionPane.showInputDialog("Paga impuestos disponible (true, false)?")
 
-                createFa(cod, carre, nombre, LocalDate.parse(date), bib.toBoolean(), pathFa)
+                createFa(cod, tipo, nombre, LocalDate.parse(date), impuestos.toBoolean(), pathFa)
             }
 
             "s" -> s = "s"
@@ -121,7 +121,7 @@ fun search(cod: String, path: String): String {
     return res
 }
 
-fun updateStudent(cod: String, path: String, op: String, prom: String = "", edad: String = "") {
+fun updateStudent(cod: String, path: String, op: String, sueldo: String = "", edad: String = "") {
 
     val miArchivo = File(path)
     val lineas = miArchivo.readLines()
@@ -132,12 +132,12 @@ fun updateStudent(cod: String, path: String, op: String, prom: String = "", edad
 
             when (op) {
                 "1" -> {
-                    var promd = it.split("\\s".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()[3]
-                    input += it.replace(promd, prom)
+                    var sueldo_aux = it.split("\\s".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()[3]
+                    input += it.replace(sueldo_aux, sueldo)
                 }
                 "2" -> {
-                    var edadd = it.split("\\s".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()[4]
-                    input += it.replace(edadd, edad)
+                    var edad_aux = it.split("\\s".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()[4]
+                    input += it.replace(edad_aux, edad)
                 }
             }
 
@@ -156,7 +156,7 @@ fun updateStudent(cod: String, path: String, op: String, prom: String = "", edad
 
 }
 
-fun updateFa(cod: String, path: String, op: String, bi: String = "") {
+fun updateFa(cod: String, path: String, op: String, impuestos: String = "") {
 
     val miArchivo = File(path)
     val lineas = miArchivo.readLines()
@@ -167,8 +167,8 @@ fun updateFa(cod: String, path: String, op: String, bi: String = "") {
 
             when (op) {
                 "1" -> {
-                    var bid = it.split("\\s".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()[4]
-                    input += it.replace(bid, bi)
+                    var impuestos_aux = it.split("\\s".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()[4]
+                    input += it.replace(impuestos_aux, impuestos)
                 }
             }
 
@@ -208,19 +208,25 @@ fun createStudent(
     id: String,
     nombre: String,
     apellido: String,
-    promedio: Double,
+    sueldo: Double,
     edad: Int,
     cod: String,
-    carr: String,
+    cargo: String,
     path: String
 ) {
-    val outString = "\n${id} ${nombre} ${apellido} ${promedio} ${edad} ${cod} ${carr}"
+    val outString = "\n${id} ${nombre} ${apellido} ${sueldo} ${edad} ${cod} ${cargo}"
     val archivo = File(path)
     write(archivo.toPath(), outString.toByteArray(), StandardOpenOption.APPEND)
 }
 
-fun createFa(cod: String, carre: String, nombre: String, fecha: LocalDate, bib: Boolean, path: String) {
-    val outString = "\n${cod} ${carre} ${nombre} ${fecha} ${bib} ${cod}"
+fun createFa(
+    cod: String,
+    tipo: String,
+    nombre: String,
+    fecha: LocalDate,
+    impuestos: Boolean,
+    path: String) {
+    val outString = "\n${cod} ${tipo} ${nombre} ${fecha} ${impuestos} ${cod}"
     val archivo = File(path)
     write(archivo.toPath(), outString.toByteArray(), StandardOpenOption.APPEND)
 }

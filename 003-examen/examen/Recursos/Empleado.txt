@@ -1,0 +1,4 @@
+id nombre apellido sueldo edad nombreEmpresa cargo
+001 Bryan Guachi 500.0 34 Megamaxi cajero
+002 Cristina Guachi 820.6 28 Ferrisariato desarrollador
+003 Kevin Caicedo 750.5 30 Tia electricista
