@@ -1,4 +1,4 @@
-package com.example.pbapplication
+package com.example.vaesapplication
 
 import org.junit.Test
 

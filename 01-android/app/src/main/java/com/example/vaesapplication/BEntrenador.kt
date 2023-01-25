@@ -1,26 +1,13 @@
-package com.example.pbapplication
+package com.example.vaesapplication
 
-<<<<<<< HEAD
-class BEntrenador (
-
-    val nombre: String?,
-    val descripcion: String?
-
-    ){
-=======
 import android.os.Parcel
-import android.os.ParcelUuid
 import android.os.Parcelable
-import java.util.FormattableFlags
 
-class BEntrenador (
-
+class BEntrenador(
     var id: Int,
-    val nombre: String?,
-    val descripcion: String?
-
-    ):Parcelable{
-
+    var nombre: String?,
+    var descripcion: String?,
+) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readInt(),
         parcel.readString(),
@@ -32,14 +19,14 @@ class BEntrenador (
         return "${nombre} - ${descripcion}"
     }
 
-    override fun describeContents(): Int {
-        return 0
-    }
-
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeInt(id)
         parcel.writeString(nombre)
         parcel.writeString(descripcion)
+    }
+
+    override fun describeContents(): Int {
+        return 0
     }
 
     companion object CREATOR : Parcelable.Creator<BEntrenador> {
@@ -51,5 +38,5 @@ class BEntrenador (
             return arrayOfNulls(size)
         }
     }
->>>>>>> main
+
 }
