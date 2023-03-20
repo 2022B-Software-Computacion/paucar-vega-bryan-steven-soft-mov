@@ -21,16 +21,16 @@ class HGoogleMapsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_hgoogle_maps2)
         solicitarPermisos()
         iniciarLogicaMapa()
-
         val boton = findViewById<Button>(R.id.btn_ir_carolina)
-        boton.setOnClickListener {
-            irCarolina()
-        }
+                boton.
+                setOnClickListener {
+                    irCarolina()
+                }
     }
 
-    private fun irCarolina() {
+    fun irCarolina(){
         val carolina = LatLng(-0.1825684318486696,
-        -78.48447277600916)
+            -78.48447277600916)
         val zoom = 17f
         moverCamaraConZoom(carolina, zoom)
     }

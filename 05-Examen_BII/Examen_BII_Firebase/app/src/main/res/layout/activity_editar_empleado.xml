@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editarEmpleado">
+
+    <TextView
+        android:id="@+id/tv_EditarEmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_NombreEmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/tv_EditarEmp"
+        app:layout_constraintStart_toStartOf="@+id/tv_EditarEmp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_EditarEmp" />
+
+    <EditText
+        android:id="@+id/et_ApellidoEmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/et_NombreEmp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_NombreEmp"
+        app:layout_constraintTop_toBottomOf="@+id/et_NombreEmp" />
+
+    <EditText
+        android:id="@+id/et_SueldoEmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/et_ApellidoEmp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_ApellidoEmp"
+        app:layout_constraintTop_toBottomOf="@+id/et_ApellidoEmp" />
+
+    <EditText
+        android:id="@+id/et_edadEmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/et_SueldoEmp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_SueldoEmp"
+        app:layout_constraintTop_toBottomOf="@+id/et_SueldoEmp" />
+
+    <Button
+        android:id="@+id/btn_AceptarEmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Aceptar"
+        app:layout_constraintEnd_toEndOf="@+id/et_edadEmp"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/et_edadEmp"
+        app:layout_constraintTop_toBottomOf="@+id/et_edadEmp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

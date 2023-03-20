@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/codEmpresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Ingrese código"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/nombreEmpresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Ingrese nombre de la Empresa"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/numDepartamentos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Ingrese numero de departamentos"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/direccionEmpresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Ingrese direccion de la empresa"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/bibFac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Disposición de biblioteca"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

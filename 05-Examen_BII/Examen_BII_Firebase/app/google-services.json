@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "685934639104",
+    "firebase_url": "https://examen-bii-firebase-default-rtdb.firebaseio.com",
+    "project_id": "examen-bii-firebase",
+    "storage_bucket": "examen-bii-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685934639104:android:29b1cd4f1a61871bf680e5",
+        "android_client_info": {
+          "package_name": "com.example.examen_bii_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685934639104-109uljrfnlfc1m3ju2ad7jore4nb06o9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBd25f45xCN-HlqsMKYwyiEJs8iPJHZycM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685934639104-109uljrfnlfc1m3ju2ad7jore4nb06o9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
